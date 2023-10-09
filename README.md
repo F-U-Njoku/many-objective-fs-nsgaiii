@@ -1,4 +1,4 @@
-# Explainable multi-objective feature selection with NSGA-II
+# On the interpretability of Many-objective Feature selection
 In this repository, you will find the codebase for the experiments of our proposed multi-objective feature selection with NSGA-II.
 The four files represent the various experiments we executed:
 * Baseline  &rarr; baseline.py
