@@ -18,6 +18,7 @@ from sklearn.model_selection import cross_val_score, cross_validate, train_test_
 from jmetal.core.problem import BinaryProblem
 from jmetal.core.solution import BinarySolution
 from jmetal.algorithm.multiobjective import NSGAII
+from jmetal.util.solution import get_non_dominated_solutions
 from statsmodels.stats.outliers_influence import variance_inflation_factor as vif
 from jmetal.operator import SBXCrossover, PolynomialMutation, SPXCrossover, BitFlipMutation
 from jmetal.util.termination_criterion import StoppingByEvaluations, StoppingByTime
@@ -192,7 +193,7 @@ def experiment(data_spec, classifier):
         start = time.time()
         algorithm.run()
         end = time.time()
-        solutions = algorithm.get_result()
+        solutions = get_non_dominated_solutions(algorithm.get_result())
 
         run_times.append(round((end - start), 4))
 
@@ -221,5 +222,8 @@ def experiment(data_spec, classifier):
 
 if __name__ == '__main__':
     nb = GaussianNB()
+    le = LabelEncoder()
+    baseTree = DecisionTreeClassifier(random_state=0)
+    knn = KNeighborsClassifier()
     for value in [[1526, 2], [40496, 7], [1565, 7], [1560, 10], [1021, 3], [995, 3], [1004, 4], [40666, 168]]:
         experiment(value, nb)
