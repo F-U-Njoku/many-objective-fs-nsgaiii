@@ -21,3 +21,5 @@ To execute the script, use the command below with the arguments specified.
 ```
 python six_objectives.py [file path] [target feature] ["dt"|"lr"] [sensitive feature]
 ```
+## Report for Eight datasets
+
