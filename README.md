@@ -22,4 +22,5 @@ To execute the script, use the command below with the arguments specified.
 python six_objectives.py [file path] [target feature] ["dt"|"lr"] [sensitive feature]
 ```
 ## Report for Eight datasets
+Besides the two usecases presented in the paper, we also worked with eight datasets and four objectives (subset size, accuracu, F1-score, and VIF). Following our proposed methodology for interpretability, we created the dashboard below to present the results. We invite you to interact with it.
 [![Report on dashboard](https://github.com/F-U-Njoku/many-objective-fs-nsgaiii/blob/main/Copy_of_In-Fair-FS.png)](https://lookerstudio.google.com/s/navwGaBzBP0)
