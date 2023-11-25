@@ -22,4 +22,4 @@ To execute the script, use the command below with the arguments specified.
 python six_objectives.py [file path] [target feature] ["dt"|"lr"] [sensitive feature]
 ```
 ## Report for Eight datasets
-[![Title](https://lookerstudio.google.com/s/navwGaBzBP0)](https://lookerstudio.google.com/s/navwGaBzBP0)
+[![Report on dashboard](https://github.com/F-U-Njoku/many-objective-fs-nsgaiii/blob/main/Copy_of_In-Fair-FS.pdf)](https://lookerstudio.google.com/s/navwGaBzBP0)
