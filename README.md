@@ -7,7 +7,7 @@ pip install -r requirements.txt
 ```
 ## Four objectives
 Three arguments are required to execute the ```four_objectives.py``` script:
-- file path: this is the path to the file for execution.
+- file path: this is the path to the file for execution (acceptable file format is CSV).
 - target feature: the name of the target feature.
 - classifier: classifier to use for the experiment. This could be a Decision tree (dt), Logistic regression (lr) or, if not specified, Naive Bayes (NB).
 To execute the script, you can just use the command below with the arguments specified.
